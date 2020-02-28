@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "gh:docs": "rimraf ../docs/ && yarn build && cpy ./build/**/*.* ../docs/ --parents"
+    "gh:docs": "rimraf ../docs/ && yarn build && cpy **/*.* --cwd=build ../../docs/ --parents"
   },
   "eslintConfig": {
     "extends": "react-app"
